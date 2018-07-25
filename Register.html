@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录注册</title>
+    <style>
+        .divall {
+            width: 500px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 0px auto;
+        }
+
+        .divhead {
+            width: 496px;
+            height: 50px;
+            background: royalblue;
+        }
+
+        .text {
+            width: 480px;
+            height: 100px;
+            background: aqua;
+            margin: 0px auto;
+        }
+
+        .ch, .nin {
+            width: 170px;
+            margin: 0px auto;
+        }
+
+        .a1, .a2, .b1, .b2, .c1, .c2, .d1, .d2, .e1, .e2, .f1, .f2, .g1, .g2, .h1, .h2 {
+            float: left;
+            height: 40px;
+
+        }
+
+        .a1, .b1, .c1, .d1, .e1, .f1, .g1, .h1 {
+            text-align: right;
+            width: 120px;
+            /*border: 1px solid black;*/
+        }
+
+        .fir, .sec, .thi, .fou, .fiv, .six, .sen, .eig {
+            width: 496px;
+            height: 44px;
+            margin: 0px auto;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+<div class="divall">
+    <form name="form1" method="post" action="2.html" onsubmit="return check()">
+        <div class="divhead" style="text-align:center">
+            请输入个人资料（带**项为必填项）
+        </div>
+        <div class="first">
+            <div class="text">
+                <p>协议</p>
+            </div>
+            <div class="ch">
+                <form action="" method="get">
+                    <input type="radio" value="我同意" name="agree"> 我同意
+                    <input type="radio" value="不同意" name="agree"> 不同意
+                </form>
+            </div>
+        </div>
+        <div class="fir">
+            <div class="a1">用户名：</div>
+            <div class="a2"><input type="text" style="width: 300px;height: 30px" onblur="check()"></div>
+        </div>
+        <div class="sec">
+            <div class="b1">中文昵称：</div>
+            <div class="b2"><input type="text" style="width: 300px;height: 30px" onblur="check()"></div>
+        </div>
+        <div class="thi">
+            <div class="c1">请输入密码：</div>
+            <div class="c2"><input type="password" style="width: 300px;height: 30px" onblur="check()"></div>
+        </div>
+        <div class="fou">
+            <div class="d1">确认密码：</div>
+            <div class="d2"><input type="password" style="width: 300px;height: 30px" onblur="check()"></div>
+        </div>
+        <div class="fiv">
+            <div class="e1">密码提示问题：</div>
+            <div class="e2"><input type="text" style="width: 300px;height: 30px"></div>
+        </div>
+        <div class="six">
+            <div class="f1">密码提示答案：</div>
+            <div class="f2"><input type="text" style="width: 300px;height: 30px"></div>
+        </div>
+        <div class="sen">
+            <div class="g1">性别：</div>
+            <div class="g2">
+                <form action="" method="get1">
+                    <input type="radio" value="男" name="gender"> 男
+                    <input type="radio" value="女" name="gender"> 女
+                </form>
+            </div>
+        </div>
+        <div class="eig">
+            <div class="h1">邮箱：</div>
+            <div class="h2"><input type="text" style="width: 300px;height: 30px" onblur="check()"></div>
+        </div>
+        <div class="nin">
+            <button>注册</button>
+            <button>充填</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
